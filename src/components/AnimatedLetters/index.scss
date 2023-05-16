@@ -1,0 +1,71 @@
+.text-animate {
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn 1s 1s;
+    animation-fill-mode: forwards;
+    min-width: 10px;
+    color: rgba(17, 25, 40, 0.5);;
+}
+
+.text-animate-hover:nth-child(1n) {
+    transition: color 0.25s ease-in 0.01s;
+    color: azure;}
+.text-animate-hover:nth-child(2n) {
+    transition: color 0.26s ease-in 0.02s;
+    color: azure;}
+.text-animate-hover:nth-child(3n) {
+    transition: color 0.27s ease-in 0.03s;
+    color: azure;}
+.text-animate-hover:nth-child(4n) {
+    transition: color 0.28s ease-in 0.04s;
+    color: azure;}
+.text-animate-hover:nth-child(5n) {
+    transition: color 0.29s ease-in 0.05s;
+    color: azure;}
+.text-animate-hover:nth-child(6n) {
+    transition: color 0.30s ease-in 0.06s;
+    color: azure;}
+.text-animate-hover:nth-child(7n) {
+    transition: color 0.31s ease-in 0.07s;
+    color: azure;}
+.text-animate-hover:nth-child(8n) {
+    transition: color 0.32s ease-in 0.08s;
+    color: azure;}
+.text-animate-hover:nth-child(9n) {
+    transition: color 0.33s ease-in 0.09s;
+    color: azure;}
+.text-animate-hover:nth-child(10n) {
+    transition: color 0.34s ease-in  .1s;
+    color: azure;}
+.text-animate-hover:nth-child(11n) {
+    transition: color 0.35s ease-in .11s;
+    color: azure;}
+.text-animate-hover:nth-child(12n) {
+    transition: color 0.36s ease-in .12s;
+    color: azure;}
+.text-animate-hover:nth-child(13n) {
+    transition: color 0.37s ease-in 0.13s;
+    color: azure;}
+
+
+
+.text-animate-hover {
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+    
+    &:hover {
+        animation: rubberBand 1s;
+        animation-delay: -0.06s;
+        transition: color 0.01s ease-in-out 0.01s;
+        color: #46b7fb;
+        filter: drop-shadow(0px 0px 25px #46b7fb);
+    }
+}
+
+
+@for $i from 1 through 35 {
+    .text-animate._#{$i} {
+        animation-delay: #{$i / 10}s;
+    }
+}
