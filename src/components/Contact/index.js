@@ -1,6 +1,6 @@
 import AnimatedLetters from '../AnimatedLetters';
 import { useState, useEffect, useRef } from 'react';
-import { serviceId, templateId, publicKey } from './keys';
+import { serviceId, templateId, publicKey } from '../../keys/keys';
 import './index.scss';
 import emailjs from '@emailjs/browser'
 
