@@ -8,7 +8,6 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 
-// All of this can be found when you set up firebase and can be copied from a single page
 const firebaseConfig = {
   apiKey: "apiKey here",
   authDomain: "authDomain here",
