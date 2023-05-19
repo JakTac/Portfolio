@@ -1,4 +1,5 @@
 import './App.scss';
+import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './components/Home'
@@ -9,6 +10,11 @@ import Dashboard from './components/Dashboard';
 import Background from './components/Home/background';
 
 function App() {
+
+  // useEffect(() => {
+  //   document.title = "Jake Tippit"
+  // }, [])
+
   return (
     <>
     <Background />
