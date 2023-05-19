@@ -1,6 +1,5 @@
 import AnimatedLetters from '../AnimatedLetters';
 import { useState, useEffect, useRef } from 'react';
-import { serviceId, templateId, publicKey } from '../../keys/keys';
 import './index.scss';
 import emailjs from '@emailjs/browser'
 
@@ -18,10 +17,10 @@ const Contact = () => {
         e.preventDefault()
         emailjs
           .sendForm(
-            serviceId,
-            templateId,
+            process.env.REACT_APP_SERVICE_ID,
+            process.env.REACT_APP_TEMPLATE_ID,
             form.current,
-            publicKey,
+            process.env.REACT_APP_PUBLIC_KEY,
           )
           .then(() => {
                 alert('Message successfully sent!')
