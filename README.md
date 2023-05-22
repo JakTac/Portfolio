@@ -1,6 +1,7 @@
 # Info before setting up
 
 This portfolio site was built based off of the following videos: https://www.youtube.com/watch?v=ESHaail1eGc, and https://www.youtube.com/watch?v=3yD6Mwx6i0Q. I highly recommend giving these two videos a watch as he goes over how to set up emailjs and firebase respectively. It may also help you get a better understanding of what's going on under the hood.
+The firebase.js file contains api keys that are for my specific portfolio website so they won't work for your portfolio website so make sure you change those once you've sett up your own firebase account/project.
 
 # Getting Started with Create React App
 
